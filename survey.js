@@ -1,30 +1,9 @@
 const readline = require('readline');
-// const { stdin: input, stdout: output } = require('process');
-
-// const rl = readline.createInterface({ input, output });
 
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
-// const profile = {
-//   name: '',
-//   activity: '',
-//   sounds: '',
-//   mealOfDay: '',
-//   favFood: '',
-//   favTV: '',
-//   superPower: ''
-// };
-
-// rl.question(query[, options], callback)
-// rl.question('What is your name or nickname? ', (answer) => {
-//   profile.name = answer;
-//   console.log(`Hello ${answer}!`);
-//   console.log(profile.name);
-
-//   rl.close();
-// });
 
 rl.question('What is your first name or nickname? ', (name) => {
   rl.question('What is your favourite activity? ', (activity) => {
@@ -43,5 +22,3 @@ rl.question('What is your first name or nickname? ', (name) => {
     })
   })
 });
-
-// rl.question(query[, options], callback)
